@@ -1,0 +1,101 @@
+.toolbar {
+  display: flex;
+  z-index: 5;
+  position: fixed;
+  height: 13%;
+  top: 0;
+  width: 100%;
+  background-color: #6a6255;
+  justify-content: space-between; /* Pour répartir les barres à gauche, au centre et à droite */
+  align-items: center;
+}
+
+.left_toolbar {
+  width: 30%;
+  display: flex;
+ // justify-content: center; /* Centrez horizontalement le contenu de .div_logo1 */
+  align-items: center; /* Centrez verticalement le contenu de .div_logo1 */
+  flex-direction: row;
+  color: white;
+}
+
+.middle_toolbar {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center; /* Centrez horizontalement le contenu de .div_logo1 */
+  align-items: center; /* Centrez verticalement le contenu de .div_logo1 */
+  flex-direction: column;
+  color: white;
+}
+
+.right_toolbar {
+  width: 30%;
+  display: flex;
+  // justify-content: center; /* Centrez horizontalement le contenu de .div_logo1 */
+  align-items: center; /* Centrez verticalement le contenu de .div_logo1 */
+  flex-direction: row;
+  color: white;
+  justify-content: right;
+}
+
+.logo1 {
+  cursor: pointer;
+  height: 100%;
+  padding-bottom: 10px;
+}
+
+.menu_icon {
+  cursor: pointer;
+  margin-left: 20%;
+  font-size: 30px;
+  width: auto;
+  height: auto;
+}
+
+.menu_icon_little {
+  cursor: pointer;
+  margin-left: 20%;
+  font-size: 70px;
+  width: auto;
+  height: auto;
+}
+
+.menu_text_tool_bar {
+  cursor: pointer;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 27px;
+  margin-top: 1.7%;
+}
+
+.contact_icon {
+  float: right;
+  cursor: pointer;
+  font-size: 30px;
+  width: auto;
+  height: auto;
+}
+
+.contact_icon_little {
+  float: right;
+  cursor: pointer;
+  margin-right: 20%;
+  font-size: 70px;
+  width: auto;
+  height: auto;
+}
+
+.contact_text_tool_bar {
+  float: right;
+  cursor: pointer;
+  color: white;
+  margin-right: 20%;
+  font-family: 'Playfair Display', serif;
+  font-size: 27px;
+  margin-top: 1.7%;
+}
+
+.width_space {
+  width: 10px;
+}

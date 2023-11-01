@@ -1,0 +1,37 @@
+<div class="big_div_nav_bar">
+  <div class="nav_bar">
+    <div class="up_nav_bar">
+      <mat-icon class="menu_icon_nav_bar" (click)="close_nav_bar()">close</mat-icon>
+      <p class="menu_text_nav_bar" (click)="close_nav_bar()">MENU</p>
+    </div>
+    <div class="middle_nav_bar">
+      <div class="nav_button">
+        <p class="text_button_nav_bar" (click)="naviguate_to_accueil()">Accueil</p>
+        <mat-icon class="arrow_button_nav_bar" (click)="naviguate_to_accueil()">keyboard_arrow_right</mat-icon>
+      </div>
+      <div class="nav_button">
+        <p class="text_button_nav_bar" (click)="naviguate_to_nos_chaussures()">Nos Chassures</p>
+        <mat-icon class="arrow_button_nav_bar" (click)="naviguate_to_nos_chaussures()">keyboard_arrow_right</mat-icon>
+      </div>
+      <div class="nav_button">
+        <p class="text_button_nav_bar" (click)="naviguate_to_a_propos()">À Propos</p>
+        <mat-icon class="arrow_button_nav_bar" (click)="naviguate_to_a_propos()">keyboard_arrow_right</mat-icon>
+      </div>
+      <div class="nav_button">
+        <p class="text_button_nav_bar" (click)="naviguate_to_contact()">Contact</p>
+        <mat-icon class="arrow_button_nav_bar" (click)="naviguate_to_contact()">keyboard_arrow_right</mat-icon>
+      </div>
+    </div>
+    <div class="bottom_nav_bar">
+      <div class="bottom_div1">
+        <mat-icon class="local_icon_nav_bar" (click)="openGoogleMaps()">place</mat-icon>
+        <p class="local_text_nav_bar" (click)="openGoogleMaps()">Nous trouvez !</p>
+      </div>
+      <div class="bottom_div2">
+        <mat-icon class="local_icon_nav_bar" (click)="naviguate_to_mention_legale()">edit</mat-icon>
+        <p class="local_text_nav_bar" (click)="naviguate_to_mention_legale()">Mentions légal</p>
+      </div>
+    </div>
+  </div>
+  <div class="other" (click)="close_nav_bar()"></div>
+</div>

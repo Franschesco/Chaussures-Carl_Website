@@ -1,0 +1,60 @@
+.photo1 {
+  transition: transform 0.3s; /* Durée de la transition */
+}
+
+.photo1:hover {
+  transform: scale(1.05); /* Échelle agrandie lors du survol */
+}
+
+.top_box {
+  width: 100%;
+  background-color: #6a6255;
+  display: flex;
+  justify-content: center; /* Centrez horizontalement le contenu de .div_logo1 */
+  align-items: center;
+  flex-direction: column;
+}
+
+.text_top_accueil_titre {
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  padding-top: 30px;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  line-height: 35px;
+}
+
+.text_top_accueil_content {
+  color: white;
+  font-size: 25px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+.main_accueil_div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.first_div {
+  width: 80%;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo1 {
+  width: 180px;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.space {
+  width: 20px;
+}

@@ -1,0 +1,69 @@
+.bottom_bar {
+  width: 100%;
+  background-color: #6a6255;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrez horizontalement le contenu de .div_logo1 */
+  align-items: center; /* Centrez verticalement le contenu de .div_logo1 */
+}
+
+.main_info_div {
+  width: 50%;
+  padding: 60px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bar_central {
+  width: 70%;
+  height: 2px;
+  background-color: #9a765c;
+}
+
+.little_infos_below_central_bar {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.local_icon_bottom_bar {
+  color: white;
+}
+
+.width_space {
+  width: 10px;
+}
+
+.adresse {
+  text-align: center;
+  display: flex;
+  padding: 10px;
+}
+
+.text_bottom_bar {
+  color: white;
+  font-family: 'Playfair Display', serif;
+}
+
+.logo_bottom_div {
+  width: 70%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_bottom {
+  cursor: pointer;
+  height: 100%;
+}
+
+.box_bottom_bar {
+  display: flex;
+  flex-grow: 1;
+}
+
+.space_heigth {
+  height: 40px;
+}

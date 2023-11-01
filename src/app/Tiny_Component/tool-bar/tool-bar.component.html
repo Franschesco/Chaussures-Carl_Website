@@ -1,0 +1,15 @@
+<div class="toolbar">
+  <div class="left_toolbar">
+    <mat-icon [ngClass]="menu_icon_class()" (click)="nav_bar_buton()">menu</mat-icon>
+    <div class="width_space"></div>
+    <p class="menu_text_tool_bar" (click)="nav_bar_buton()" *ngIf="screenWidth_is_ok()">Menu</p>
+  </div>
+  <div class="middle_toolbar">
+    <img src="assets/img/logo1.jpg" alt="Salut" class="logo1" (click)="accueil_event()">
+  </div>
+  <div class="right_toolbar">
+    <mat-icon [ngClass]="contact_icon_class()" class="contact_icon" (click)="contact_event()">phone</mat-icon>
+    <div class="width_space"></div>
+    <p class="contact_text_tool_bar" (click)="contact_event()" *ngIf="screenWidth_is_ok()">Contact</p>
+  </div>
+</div>
