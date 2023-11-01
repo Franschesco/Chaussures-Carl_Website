@@ -8,10 +8,12 @@
 }
 
 .main_info_div {
-  width: 50%;
+  width: 60%;
   padding: 60px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center; /* Centre horizontalement les éléments */
+  align-items: center;
 }
 
 .bar_central {
