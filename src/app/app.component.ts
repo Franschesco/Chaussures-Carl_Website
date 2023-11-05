@@ -9,7 +9,7 @@ export class AppComponent implements OnInit {
 
   screenWidth = 0;
   nav_bar_display : boolean = false;
-
+  size_little = 1000;
 
   scrool_to_top_instant() {
     window.scrollTo({

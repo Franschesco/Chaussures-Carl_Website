@@ -40,8 +40,7 @@
 
 .logo1 {
   cursor: pointer;
-  width: 15%;
-  padding-bottom: 10px;
+  height: 100px;
 }
 
 .menu_icon {
@@ -55,7 +54,7 @@
 .menu_icon_little {
   cursor: pointer;
   margin-left: 20%;
-  font-size: 70px;
+  font-size: 40px;
   width: auto;
   height: auto;
 }
@@ -80,7 +79,7 @@
   float: right;
   cursor: pointer;
   margin-right: 20%;
-  font-size: 70px;
+  font-size: 40px;
   width: auto;
   height: auto;
 }
@@ -96,5 +95,11 @@
 }
 
 .width_space {
+  cursor: pointer;
   width: 10px;
+}
+
+.local_icon_bottom_bar {
+  color: white;
+  height: 28px;
 }

@@ -8,8 +8,28 @@
     <img src="assets/img/logo1.jpg" alt="Salut" class="logo1" (click)="accueil_event()">
   </div>
   <div class="right_toolbar">
-    <mat-icon [ngClass]="contact_icon_class()" class="contact_icon" (click)="contact_event()">phone</mat-icon>
-    <div class="width_space"></div>
-    <p class="contact_text_tool_bar" (click)="contact_event()" *ngIf="screenWidth_is_ok()">Contact</p>
+    <mat-icon [ngClass]="contact_icon_class()" mat-button [matMenuTriggerFor]="menu" class="contact_icon" >phone</mat-icon>
+    <div class="width_space" mat-button [matMenuTriggerFor]="menu"></div>
+    <p class="contact_text_tool_bar" mat-button [matMenuTriggerFor]="menu" *ngIf="screenWidth_is_ok()">Contact</p>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="copy_phone_to_ClipBoard()">
+        <mat-icon>phone</mat-icon>
+        <span>03 88 92 15 48</span>
+      </button>
+      <button mat-menu-item (click)="copy_mail_to_ClipBoard()">
+        <mat-icon>mail</mat-icon>
+        <span>chaussures.carl@outlook.fr</span>
+      </button>
+      <button mat-menu-item (click)="naviguate_to_facebook()">
+        <mat-icon>facebook</mat-icon>
+        <span>Facebook</span>
+      </button>
+      <button mat-menu-item (click)="naviguate_to_instagram()">
+        <mat-icon class="local_icon_bottom_bar" style="cursor: pointer">
+          <i class="fa fa-instagram"></i>
+        </mat-icon>
+        <span>Instagram</span>
+      </button>
+    </mat-menu>
   </div>
 </div>

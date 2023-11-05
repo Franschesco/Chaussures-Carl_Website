@@ -58,10 +58,10 @@ export class NavBarComponent implements OnInit {
     this.router.navigate(['/accueil'])
   }
 
-  naviguate_to_nos_chaussures() {
+  naviguate_to_nos_marques() {
     this.close_nav_bar();
     this.appComponent.scrool_to_top_instant();
-    this.router.navigate(['/noschaussures'])
+    this.router.navigate(['/nosmarques'])
   }
 
   naviguate_to_a_propos() {
@@ -70,10 +70,10 @@ export class NavBarComponent implements OnInit {
     this.router.navigate(['/apropos'])
   }
 
-  naviguate_to_contact() {
+  naviguate_to_boutique() {
     this.close_nav_bar();
     this.appComponent.scrool_to_top_instant();
-    this.router.navigate(['/contact'])
+    this.router.navigate(['/boutique'])
   }
 
   naviguate_to_mention_legale() {

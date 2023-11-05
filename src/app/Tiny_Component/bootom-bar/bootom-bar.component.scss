@@ -16,6 +16,15 @@
   align-items: center;
 }
 
+.main_info_div_little {
+  width: 30%;
+  padding: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centre horizontalement les éléments */
+  align-items: center;
+}
+
 .bar_central {
   width: 70%;
   height: 2px;
@@ -31,6 +40,7 @@
 
 .local_icon_bottom_bar {
   color: white;
+  height: 28px;
 }
 
 .width_space {

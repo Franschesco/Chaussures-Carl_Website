@@ -1,6 +1,40 @@
 .mention_legale {
-  width: 90%;
-  height: 500px;
+  padding-top: 40px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
-  padding: 4%;
 }
+
+.box_theme {
+  padding: 10px;
+  flex-grow: 1;
+}
+
+p {
+  line-height: 40px;
+  font-size: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+.title {
+  width: 100%;
+  padding-top: 50px;
+  text-align: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+h3 {
+  font-size: 60px;
+  font-weight: 600;
+  font-family: 'Playfair Display', serif;
+}
+
+

@@ -2,19 +2,49 @@
   <p class="text_top_accueil_titre">L’originalité, la convivialité, la qualité</p>
   <p class="text_top_accueil_content">Spécialiste de vente en détail de Chaussures</p>
 </div>
-<div class="main_accueil_div">
+<div class="main_accueil_div_big" *ngIf="is_little_main">
+  <div class="first_div">
+    <video autoplay muted loop preload="auto" class="photo3" >
+      <source type="video/mp4" src="assets/img/videoMp4.mp4">
+    </video>
+  </div>
   <div class="first_div">
     <img src="assets/img/img2.jpg" alt="photo1" class="photo1">
-    <div class="space"></div>
-    <img src="assets/img/img1.jpg" alt="photo1" class="photo1">
-    <div class="space"></div>
+    <div class="space2"></div>
     <img src="assets/img/img3.jpg" alt="photo1" class="photo1">
   </div>
   <div class="first_div">
     <img src="assets/img/img4.jpg" alt="photo1" class="photo1">
+    <div class="space2"></div>
+    <img src="assets/img/img5.jpg" alt="photo1" class="photo1">
+  </div>
+  <div class="first_div">
+    <img src="assets/img/img1.jpg" alt="photo1" class="photo1">
+    <div class="space2"></div>
+    <img src="assets/img/img6.jpg" alt="photo1" class="photo1">
+  </div>
+</div>
+<div class="main_accueil_div_little" *ngIf="!is_little_main">
+  <div class="first_div">
+    <img src="assets/img/img2.jpg" alt="photo1" class="photo1">
+    <div class="space2"></div>
+    <video autoplay muted loop preload="auto" class="photo2" >
+      <source type="video/mp4" src="assets/img/videoSquare.mp4">
+    </video>
+    <div class="space2"></div>
+    <img src="assets/img/img3.jpg" alt="photo1" class="photo1">
+  </div>
+  <div class="seconde_div">
+    <img src="assets/img/img4.jpg" alt="photo1" class="photo1">
     <div class="space"></div>
     <img src="assets/img/img5.jpg" alt="photo1" class="photo1">
     <div class="space"></div>
+    <img src="assets/img/img1.jpg" alt="photo1" class="photo1">
+    <div class="space"></div>
     <img src="assets/img/img6.jpg" alt="photo1" class="photo1">
   </div>
+</div>
+<div class="annonce">
+  <img *ngIf="!is_little_main" src="assets/annonce/test1_longue.png" alt="annonce" class="annonce_img">
+  <img *ngIf="is_little_main" src="assets/annonce/test1_square.png" alt="annonce" class="annonce_img">
 </div>

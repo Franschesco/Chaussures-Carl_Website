@@ -7,13 +7,11 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AccueilComponent } from './Page_Component/accueil/accueil.component';
-import { ContactComponent } from './Page_Component/contact/contact.component';
 import { ToolBarComponent } from './Tiny_Component/tool-bar/tool-bar.component';
 import { BootomBarComponent } from './Tiny_Component/bootom-bar/bootom-bar.component';
 import { NavBarComponent } from './Tiny_Component/nav-bar/nav-bar.component';
 import {BrowserAnimationsModule, NoopAnimationsModule} from '@angular/platform-browser/animations';
 import { BackgroundComponent } from './Tiny_Component/background/background.component';
-import { NosChaussuresComponent } from './Page_Component/nos-chaussures/nos-chaussures.component';
 import { AProposComponent } from './Page_Component/apropos/apropos.component';
 import { MentionlegaleComponent } from './Page_Component/mentionlegale/mentionlegale.component';
 import {ReactiveFormsModule} from "@angular/forms";
@@ -23,19 +21,22 @@ import {MatSnackBarModule} from "@angular/material/snack-bar";
 import {HttpClientModule} from "@angular/common/http";
 import {MatMenuModule} from "@angular/material/menu";
 import {GoogleMapsModule} from "@angular/google-maps";
+import { NosmarquesComponent } from './Page_Component/nosmarques/nosmarques.component';
+import { BoutiqueComponent } from './Page_Component/boutique/boutique.component';
+import {ClipboardModule} from "ngx-clipboard";
 
 @NgModule({
   declarations: [
     AppComponent,
     AccueilComponent,
-    ContactComponent,
     ToolBarComponent,
     BootomBarComponent,
     NavBarComponent,
     BackgroundComponent,
-    NosChaussuresComponent,
     AProposComponent,
     MentionlegaleComponent,
+    NosmarquesComponent,
+    BoutiqueComponent,
   ],
   imports: [
     BrowserModule,
@@ -59,6 +60,7 @@ import {GoogleMapsModule} from "@angular/google-maps";
     MatStepperModule,
     BrowserAnimationsModule,
     MatSnackBarModule,
+    ClipboardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

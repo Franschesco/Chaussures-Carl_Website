@@ -1,21 +1,28 @@
 <div class="bottom_bar">
-  <div class="main_info_div">
+  <div [ngClass]="get_main_info_div()">
     <div class="box_bottom_bar">
       <mat-icon class="local_icon_bottom_bar" (click)="naviguate_to_facebook()" style="cursor: pointer">facebook</mat-icon>
       <div class="width_space" (click)="naviguate_to_facebook()" style="cursor: pointer"></div>
       <p class="text_bottom_bar" (click)="naviguate_to_facebook()" style="cursor: pointer">Facebook</p>
     </div>
-    <div class="width_space"></div>
     <div class="box_bottom_bar">
-      <mat-icon class="local_icon_bottom_bar">phone</mat-icon>
-      <div class="width_space"></div>
-      <p class="text_bottom_bar">03 88 92 15 48</p>
+      <mat-icon class="local_icon_bottom_bar" (click)="naviguate_to_instagram()" style="cursor: pointer">
+        <i class="fa fa-instagram"></i>
+      </mat-icon>
+      <div class="width_space" (click)="naviguate_to_facebook()" style="cursor: pointer"></div>
+      <p class="text_bottom_bar" (click)="naviguate_to_facebook()" style="cursor: pointer">Instagram</p>
     </div>
     <div class="width_space"></div>
     <div class="box_bottom_bar">
-      <mat-icon class="local_icon_bottom_bar">mail</mat-icon>
-      <div class="width_space"></div>
-      <p class="text_bottom_bar">chaussures.carl@outlook.fr</p>
+      <mat-icon class="local_icon_bottom_bar" style="cursor: pointer" (click)="copy_phone_to_ClipBoard()">phone</mat-icon>
+      <div class="width_space" style="cursor: pointer" (click)="copy_phone_to_ClipBoard()"></div>
+      <p class="text_bottom_bar" style="cursor: pointer" (click)="copy_phone_to_ClipBoard()">03 88 92 15 48</p>
+    </div>
+    <div class="width_space"></div>
+    <div class="box_bottom_bar">
+      <mat-icon class="local_icon_bottom_bar" style="cursor: pointer" (click)="copy_mail_to_ClipBoard()">mail</mat-icon>
+      <div class="width_space" style="cursor: pointer" (click)="copy_mail_to_ClipBoard()"></div>
+      <p class="text_bottom_bar" style="cursor: pointer" (click)="copy_mail_to_ClipBoard()">chaussures.carl@outlook.fr</p>
     </div>
     <div class="box_bottom_bar">
       <mat-icon class="local_icon_bottom_bar" (click)="naviguate_to_mention_legale()" style="cursor: pointer">edit</mat-icon>
