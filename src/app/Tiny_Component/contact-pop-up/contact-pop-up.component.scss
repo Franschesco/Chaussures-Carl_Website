@@ -1,0 +1,88 @@
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%); /* Commence à 100% à gauche de l'écran */
+  }
+  100% {
+    transform: translateX(0); /* Se termine à la position originale (0) */
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(200%); /* Commence à 100% à gauche de l'écran */
+  }
+  100% {
+    transform: translateX(0); /* Se termine à la position originale (0) */
+  }
+}
+
+.contact_container {
+  animation: slideInFromRight 0.2s ease;
+  animation-fill-mode: forwards;
+  position: fixed;
+  height: 37;
+  right: 0;
+  width: 40vh;
+  z-index: 900;
+  display: flex;
+  justify-content: end;
+}
+
+.la_pop_up {
+  height: 37vh;
+  width: 40vh;
+  background-color: #6a6255;
+  border-top: 0.05vh solid #f7a365;
+  border-left: 0.05vh solid #f7a365;
+  border-bottom: 0.05vh solid #f7a365;
+}
+
+.cross_close_div {
+}
+
+.icon_close {
+  cursor: pointer;
+  color: #f7a365;
+  font-size: 5vh;
+  padding: 1vh;
+  height: 5vh;
+  width: 5vh;
+}
+
+.main_div {
+  width: 40vh;
+  height: 37vh;
+  display: flex;
+  gap: 1vh;
+  align-items: center;
+  margin-top: 2vh;
+  flex-direction: column;
+}
+
+.ligne {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: left;
+  align-items: center;
+  border-radius: 1vh;
+}
+
+.ligne:hover {
+  background-color: #a39c94;
+}
+
+.icon_contact {
+  color: white;
+  font-size: 4vh;
+  width: 4vh;
+  height: 4vh;
+}
+
+.texte_icon_contact {
+  color: white;
+  padding-left: 2vh;
+  font-size: 2.2vh;
+  font-family: 'Playfair Display', serif;
+}

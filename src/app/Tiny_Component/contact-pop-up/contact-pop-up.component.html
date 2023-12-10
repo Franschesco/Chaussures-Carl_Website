@@ -1,0 +1,29 @@
+<div class="contact_container">
+  <div class="la_pop_up">
+    <div class="cross_close_div">
+      <mat-icon class="icon_close" (click)="close_pop_up()">close</mat-icon>
+    </div>
+   <div class="main_div">
+     <div class="ligne" (click)="copy_phone_to_ClipBoard()">
+       <mat-icon class="icon_contact">phone</mat-icon>
+       <p class="texte_icon_contact">03 88 92 15 48</p>
+     </div>
+     <div class="ligne" (click)="copy_mail_to_ClipBoard()">
+       <mat-icon class="icon_contact">mail</mat-icon>
+       <p class="texte_icon_contact">chaussures.carl@outlook.fr</p>
+     </div>
+     <div class="ligne" (click)="naviguate_to_facebook()">
+       <mat-icon class="icon_contact">facebook</mat-icon>
+       <p class="texte_icon_contact">Facebook</p>
+     </div>
+     <div class="ligne" (click)="naviguate_to_instagram()">
+       <mat-icon class="icon_contact" style="height: 5vh;"><i class="fa fa-instagram"></i></mat-icon>
+       <p class="texte_icon_contact">Instagram</p>
+     </div>
+     <div class="ligne" (click)="openGoogleMaps()">
+       <mat-icon class="icon_contact">place</mat-icon>
+       <p class="texte_icon_contact">Nous trouver</p>
+     </div>
+   </div>
+  </div>
+  <div>

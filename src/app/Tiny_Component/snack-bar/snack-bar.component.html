@@ -1,0 +1,11 @@
+<div class="snack_bar_container">
+  <div class="snack_bar_pop_up">
+    <div class="div_texte">
+      <p class="texte_snack_bar" *ngIf="mail">Adresse mail copié !</p>
+      <p class="texte_snack_bar" *ngIf="phone">Numéro de téléphone copié !</p>
+    </div>
+    <div class="div_icon_close" (click)="close_pop_up()">
+      <mat-icon class="icon_close">close</mat-icon>
+    </div>
+  </div>
+<div>
