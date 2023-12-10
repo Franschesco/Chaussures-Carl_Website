@@ -12,29 +12,4 @@ export class AProposComponent {
     private appComponent: AppComponent,
   ) {
   }
-
-  get_apropos_div() {
-    if (window.outerWidth > this.appComponent.size_little) {
-      return ('apropos');
-    } else {
-      return ('apropos_little');
-    }
-  }
-
-  get_first_left_div() {
-    if (window.outerWidth > this.appComponent.size_little) {
-      return ('first_left');
-    } else {
-      return ('first_left_little');
-    }
-  }
-
-  its_big() {
-    if (window.outerWidth > this.appComponent.size_little) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
 }

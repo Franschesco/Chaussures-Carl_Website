@@ -1,50 +1,66 @@
-<div class="top_box">
-  <p class="text_top_accueil_titre">L’originalité, la convivialité, la qualité</p>
-  <p class="text_top_accueil_content">Spécialiste de vente en détail de Chaussures</p>
-</div>
-<div class="main_accueil_div_big" *ngIf="is_little_main">
-  <div class="first_div">
-    <video autoplay muted loop preload="auto" class="photo3" >
-      <source type="video/mp4" src="assets/img/videoMp4.mp4">
-    </video>
-  </div>
-  <div class="first_div">
-    <img src="assets/img/img2.jpg" alt="photo1" class="photo1">
-    <div class="space2"></div>
-    <img src="assets/img/img3.jpg" alt="photo1" class="photo1">
-  </div>
-  <div class="first_div">
-    <img src="assets/img/img4.jpg" alt="photo1" class="photo1">
-    <div class="space2"></div>
-    <img src="assets/img/img5.jpg" alt="photo1" class="photo1">
-  </div>
-  <div class="first_div">
-    <img src="assets/img/img1.jpg" alt="photo1" class="photo1">
-    <div class="space2"></div>
-    <img src="assets/img/img6.jpg" alt="photo1" class="photo1">
-  </div>
-</div>
-<div class="main_accueil_div_little" *ngIf="!is_little_main">
-  <div class="first_div">
-    <img src="assets/img/img2.jpg" alt="photo1" class="photo1">
-    <div class="space2"></div>
-    <video autoplay muted loop preload="auto" class="photo2" >
-      <source type="video/mp4" src="assets/img/videoSquare.mp4">
-    </video>
-    <div class="space2"></div>
-    <img src="assets/img/img3.jpg" alt="photo1" class="photo1">
-  </div>
-  <div class="seconde_div">
-    <img src="assets/img/img4.jpg" alt="photo1" class="photo1">
-    <div class="space"></div>
-    <img src="assets/img/img5.jpg" alt="photo1" class="photo1">
-    <div class="space"></div>
-    <img src="assets/img/img1.jpg" alt="photo1" class="photo1">
-    <div class="space"></div>
-    <img src="assets/img/img6.jpg" alt="photo1" class="photo1">
+<div class="container">
+  <div class="container_above">
+    <div class="left_panel" *ngIf="!is_little_main">
+      <img src="assets/img/logo_cercle.png" alt="logo" class="logo_above" (click)="nav_bar_buton()">
+    </div>
+    <div class="middle_panel" *ngIf="!is_little_main">
+      <p class="text_arrow" (click)="move_to_map()">Nous trouver !</p>
+      <img src="assets/img/arrow_down.png" alt="arrow" class="arrow_img" (click)="move_to_map()">
+    </div>
+    <div class="right_panel" *ngIf="!is_little_main">
+      <p class="title_text_above">ORIGINALITÉ<br>CONVIVIALITÉ<br>QUALITÉ</p>
+      <p class="detail_text_above">Spécialiste de vente en<br>détail de Chaussures</p>
+    </div>
+    <div class="little" *ngIf="is_little_main">
+      <div class="up_little">
+        <p class="detail_text_above_little">Spécialiste de vente en<br>détail de Chaussures</p>
+      </div>
+      <div class="middle_little">
+        <img src="assets/img/logo_cercle.png" alt="logo" class="logo_above_little" (click)="nav_bar_buton()">
+      </div>
+      <div class="bottom_little">
+        <p class="text_arrow_little" (click)="move_to_map()">Nous trouver !</p>
+        <img src="assets/img/arrow_down.png" alt="arrow" class="arrow_img_little" (click)="move_to_map()">
+      </div>
+    </div>
   </div>
 </div>
-<div class="annonce">
-  <img *ngIf="!is_little_main" src="assets/annonce/test1_longue.png" alt="annonce" class="annonce_img">
-  <img *ngIf="is_little_main" src="assets/annonce/test1_square.png" alt="annonce" class="annonce_img">
+<div class="div_nous_trouver">
+  <h1 class="titre_nous_trouver">LE MAGASIN</h1>
+</div>
+
+<div class="caroussel_slider_div">
+  <div class="div_photo_carrousel" [ngClass]="get_carrousel_class()" [@carrouselAnimation]="currentCarrouselState">
+    <div class="recover_background_div">
+      <div class="top_div_carrousel">
+        <mat-icon class="icon_carrousel" (click)="add_carrousel_index()">keyboard_arrow_left</mat-icon>
+        <mat-icon class="icon_carrousel" (click)="soustract_carrousel_index()">keyboard_arrow_right</mat-icon>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="div_nous_trouver">
+  <h1 class="titre_nous_trouver">NOUS TROUVER</h1>
+</div>
+<div class="div_around_google">
+  <div #GoogleMapDiv class="google_map_div">
+    <google-map height="60vh"
+                width="100%"
+                [center]="center"
+                [zoom]="zoom"
+                (mapClick)="moveMap($event)"
+                (mapMousemove)="move($event)"
+                id="google_map">
+      <map-marker
+        [position]="position_marker"
+      ></map-marker>
+    </google-map>
+  </div>
+</div>
+
+<div class="annonce_div">
+  <div class="intern_div_annonce">
+    <button class="button-56" role="button" (click)="show_annonce_pop_up()">Voir les actualités</button>
+  </div>
 </div>

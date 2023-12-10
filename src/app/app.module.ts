@@ -20,10 +20,20 @@ import {MatStepperModule} from "@angular/material/stepper";
 import {MatSnackBarModule} from "@angular/material/snack-bar";
 import {HttpClientModule} from "@angular/common/http";
 import {MatMenuModule} from "@angular/material/menu";
-import {GoogleMapsModule} from "@angular/google-maps";
 import { NosmarquesComponent } from './Page_Component/nosmarques/nosmarques.component';
 import { BoutiqueComponent } from './Page_Component/boutique/boutique.component';
 import {ClipboardModule} from "ngx-clipboard";
+import {GoogleMapsModule} from "@angular/google-maps";
+import { PopUpAnnonceComponent } from './Tiny_Component/pop-up-annonce/pop-up-annonce.component';
+import {
+  AlertModule, CarouselCaptionComponent,
+  CarouselComponent, CarouselControlComponent,
+  CarouselIndicatorsComponent,
+  CarouselInnerComponent,
+  CarouselItemComponent
+} from "@coreui/angular";
+import { ContactPopUpComponent } from './Tiny_Component/contact-pop-up/contact-pop-up.component';
+import { SnackBarComponent } from './Tiny_Component/snack-bar/snack-bar.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +47,9 @@ import {ClipboardModule} from "ngx-clipboard";
     MentionlegaleComponent,
     NosmarquesComponent,
     BoutiqueComponent,
+    PopUpAnnonceComponent,
+    ContactPopUpComponent,
+    SnackBarComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,23 +57,22 @@ import {ClipboardModule} from "ngx-clipboard";
     MatToolbarModule,
     MatIconModule,
     BrowserAnimationsModule,
-    BrowserModule,
-    AppRoutingModule,
     MatTabsModule,
-    MatToolbarModule,
-    MatIconModule,
     MatMenuModule,
-    BrowserAnimationsModule,
     NoopAnimationsModule,
     HttpClientModule,
-    BrowserModule,
     ReactiveFormsModule,
-    GoogleMapsModule,
-    MatTabsModule,
     MatStepperModule,
-    BrowserAnimationsModule,
     MatSnackBarModule,
     ClipboardModule,
+    GoogleMapsModule,
+    AlertModule,
+    CarouselComponent,
+    CarouselIndicatorsComponent,
+    CarouselInnerComponent,
+    CarouselItemComponent,
+    CarouselCaptionComponent,
+    CarouselControlComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

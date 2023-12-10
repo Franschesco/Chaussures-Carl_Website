@@ -8,43 +8,80 @@
 }
 
 .main_info_div {
-  width: 60%;
-  padding: 60px;
+  padding-top: 5vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* Centre horizontalement les éléments */
   align-items: center;
+  gap: 1vw;
 }
 
-.main_info_div_little {
-  width: 30%;
-  padding: 60px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* Centre horizontalement les éléments */
-  align-items: center;
+@media(width >= 1200px) {
+  .main_info_div {
+    width: 70%;
+    gap: 1vw;
+  }
+}
+
+@media(width >= 800px) and (width < 1200px){
+  .main_info_div {
+    width: 90%;
+    gap: 1vw;
+  }
+}
+
+@media(width < 800px) {
+  .main_info_div {
+    width: 80%;
+    gap: 2vw;
+  }
 }
 
 .bar_central {
   width: 70%;
-  height: 2px;
-  background-color: #9a765c;
+  height: 0.15vh;
+  background-color: #f7a365;
 }
 
-.little_infos_below_central_bar {
-  width: 70%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@media(width < 1000px) {
+  .bar_central {
+    margin-bottom: 2vh;
+  }
+}
+
+@media(width >= 1000px) {
+  .little_infos_below_central_bar {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media(width < 1000px) {
+  .little_infos_below_central_bar {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
 
 .local_icon_bottom_bar {
   color: white;
-  height: 28px;
+  font-size: 3vh;
+  height: 3.5vh;
+  width: 3vh;
 }
 
 .width_space {
-  width: 10px;
+  width: 1vh;
+}
+
+.heigth_space {
+  height: 5vh;
 }
 
 .adresse {
@@ -53,14 +90,28 @@
   padding: 10px;
 }
 
-.text_bottom_bar {
-  color: white;
-  font-family: 'Playfair Display', serif;
+@media(width >= 1000px) {
+  .text_bottom_bar {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 2vh;
+    line-height: 2vh;
+  }
 }
+
+@media(width < 1000px) {
+  .text_bottom_bar {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5vh;
+    line-height: 2vh;
+  }
+}
+
 
 .logo_bottom_div {
   width: 70%;
-  height: 100px;
+  height: 15vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,8 +123,12 @@
 }
 
 .box_bottom_bar {
+  padding-bottom: 5vh;
   display: flex;
+  align-items: center;
   flex-grow: 1;
+  justify-content: center;
+  gap: 0.7vw;
 }
 
 .space_heigth {

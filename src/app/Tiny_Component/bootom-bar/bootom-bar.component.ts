@@ -42,21 +42,15 @@ export class BootomBarComponent {
   copy_phone_to_ClipBoard() {
     const phone_number = "03 88 92 15 48";
     this.clipboardService.copyFromContent(phone_number);
-    this.snackBarService.open('Numéro de Téléphone copié !')
+    this.appComponent.snack_bar_mail_display = false;
+    this.appComponent.snack_bar_phone_display = true;
   }
 
   copy_mail_to_ClipBoard() {
     const mail_adresse = "chaussures.carl@outlook.fr";
     this.clipboardService.copyFromContent(mail_adresse);
-    this.snackBarService.open('Adresse Mail copié !')
-  }
-
-  get_main_info_div() {
-    if (window.outerWidth > 540) {
-      return ('main_info_div')
-    } else {
-      return ('main_info_div_little')
-    }
+    this.appComponent.snack_bar_phone_display = false;
+    this.appComponent.snack_bar_mail_display = true;
   }
 
 }

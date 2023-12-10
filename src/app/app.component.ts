@@ -9,7 +9,12 @@ export class AppComponent implements OnInit {
 
   screenWidth = 0;
   nav_bar_display : boolean = false;
+  contact_display : boolean = false;
+  snack_bar_phone_display : boolean = false;
+  snack_bar_mail_display : boolean = false;
   size_little = 1000;
+  pop_was_already_display : boolean = false;
+  display_pop_up: boolean = false;
 
   scrool_to_top_instant() {
     window.scrollTo({
@@ -19,6 +24,8 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.display_pop_up = false;
+    this.scrool_to_top_instant();
     this.refresh_tool_bar();
   }
 

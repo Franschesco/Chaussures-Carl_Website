@@ -30,6 +30,10 @@ export class ToolBarComponent{
     }
   }
 
+  open_contact() {
+    this.appComponent.contact_display = !this.appComponent.contact_display;
+  }
+
   contact_icon_class () {
     if (this.screenWidth_is_ok()) {
       return ('contact_icon')
@@ -38,12 +42,10 @@ export class ToolBarComponent{
     }
   }
 
-  menu_icon_class () {
-    if (this.screenWidth_is_ok()) {
-      return ('menu_icon')
-    } else {
-      return ('menu_icon_little')
-    }
+  openGoogleMaps() {
+    const address = 'Chaussures Carl, Scherwiller'; // Remplacez par l'adresse souhaitée
+    const googleMapsUrl = `https://www.google.com/maps?q=${encodeURIComponent(address)}`;
+    window.open(googleMapsUrl, '_blank');
   }
   nav_bar_buton () {
     this.appComponent.nav_bar_display = !this.appComponent.nav_bar_display;

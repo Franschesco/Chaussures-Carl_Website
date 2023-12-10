@@ -1,33 +1,56 @@
-<div [ngClass]="get_apropos_div()" class="apropos">
-  <div [ngClass]="get_first_left_div()">
-    <div class="div_intern">
-      <h1 class="titre_up">Vous savez moi je ne crois pas...</h1>
-      <p class="text_class">Vous savez, moi je ne crois pas qu’il y ait de bonne ou de mauvaise situation. Moi, si je devais résumer ma vie aujourd’hui avec vous, je dirais que c’est d’abord des rencontres. Des gens qui m’ont tendu la main, peut-être à un moment où je ne pouvais pas, où j’étais seul chez moi. Et c’est assez curieux de se dire que les hasards, les rencontres forgent une destinée... Parce que quand on a le goût de la chose, quand on a le goût de la chose bien faite, le beau geste, parfois on ne trouve pas l’interlocuteur en face je dirais, le miroir qui vous aide à avancer. Alors ça n’est pas mon cas, comme je disais là, puisque moi au contraire, j’ai pu ; et je dis merci à la vie, je lui dis merci, je chante la vie, je danse la vie... je ne suis qu’amour ! Et finalement, quand des gens me disent « Mais comment fais-tu pour avoir cette humanité ? », je leur réponds très simplement que c’est ce goût de l’amour, ce goût donc qui m’a poussé aujourd’hui à entreprendre une construction mécanique... mais demain qui sait ? Peut-être simplement à me mettre au service de la communauté, à faire le don, le don de soi.</p>
+<div class="apropos_div">
+  <div style="width: 100%; height: 0.08vh; background-color: #f7a365;"></div>
+  <h1 class="titre" style="padding: 10px">Chaussures Carl à Scherwiller bien sûr !</h1>
+  <div class="first_div">
+    <div class="first_div_intern">
+      <p class="texte_up">Découvrez notre magasin de chaussures CHAUSSURES CARL à Scherwiller,
+        une boutique spacieuse de 180 m² située au cœur de la ville.
+        Forts d'une expertise de plus de 60 ans dans la vente de chaussures pour femmes,
+        hommes et enfants, nous sommes fiers d'être une référence dans le domaine.<br><br>
+        Depuis les années 1950, notre boutique, spécialisée dans les chaussures de qualité,
+        propose un vaste choix de produits couvrant différentes gammes de prix.
+      </p>
+    </div>
+    <div class="first_div_intern">
+      <img src="assets/img/facade.jpg" alt="facade" class="img_facade" style="padding-left: 5vw;">
     </div>
   </div>
-  <div [ngClass]="get_first_left_div()" *ngIf="its_big()">
-    <div class="div_intern">
-      <img src="assets/img/facade.jpg" alt="facade" class="img_facade">
+  <h1 class="titre" style="padding: 10px">Une vaste sélection de chaussures de marque pour tous les goûts</h1>
+  <div class="first_div">
+    <div class="first_div_intern">
+      <img src="assets/img/intérieur_fake_square.jpg" alt="facade" class="img_facade" style="padding-right: 5vw;">
+    </div>
+    <div class="first_div_intern">
+      <p class="texte_bottom">
+        Explorez notre espace de vente où vous trouverez une variété de marques renommées de chaussures soigneusement organisées dans les sections femme, homme et enfant.
+        Notre assortiment englobe une gamme étendue de styles, allant des baskets aux mocassins, du sport chic aux modèles classiques, jusqu'aux options décontractées, répondant ainsi aux préférences de toute la famille. Nous offrons également un large éventail de chaussures confortables, idéales pour les pieds sensibles et ceux nécessitant des semelles orthopédiques.
+        En plus de nos chaussures, découvrez notre collection d'accessoires et de produits d'entretien pour prendre soin de vos chaussures préférées.
+        Si vous avez des questions ou souhaitez des conseils pour choisir vos chaussures, nos vendeurs/vendeuses qualifiées sont à votre disposition. Ils sont là pour vous guider dans votre sélection.
+        Chez Chaussures Carl, nous accordons une grande importance à votre confort. Profitez d'un cadre chaleureux pour vous installer confortablement et essayer vos chaussures en toute tranquillité.
+      </p>
+    </div>
+  </div>
+  <div style="width: 80%; height: 0.08vh; background-color: #f7a365; margin-top: 5vh"></div>
+  <div class="info_apropos">
+    <div class="panel_info_apropos">
+      <h1 class="titre2">Horaires d’ouverture</h1>
+      <p class="texte3">
+        Lundi : 14h – 19h<br><br>
+        Mardi au Vendredi : 9h – 12h / 14h – 19h<br><br>
+        Samedi : 9h – 12h30 / 14h – 18h<br><br>
+      </p>
+    </div>
+    <div class="panel_info_apropos">
+      <h1 class="titre2">Notre magasin à Scherwiller</h1>
+      <p class="texte3">
+        Chaussures Carl<br><br>
+        5 route d'Ebersheim, 67750 Scherwiller<br><br>
+        Tél : 03 88 92 15 48<br><br>
+      </p>
     </div>
   </div>
 </div>
-<div *ngIf="!its_big()" class="middle">
-  <img src="assets/img/facade.jpg" alt="facade" class="img_facade_middle">
-  <img src="assets/img/imgDeauville_square.jpg" alt="facade" class="img_deauville_middle">
+<div class="avis_remi">
+  <img src="assets/img/avis.png" alt="facade" class="img_avis">
 </div>
-<div [ngClass]="get_apropos_div()">
-  <div [ngClass]="get_first_left_div()" *ngIf="its_big()">
-    <div class="div_intern">
-      <img src="assets/img/imgDeauville_square.jpg" alt="facade" class="img_deauville">
-    </div>
-  </div>
-  <div [ngClass]="get_first_left_div()">
-    <div class="div_intern">
-      <h1 class="titre_bottom">Vous savez moi je ne crois pas...</h1>
-      <p class="text_class">Vous savez, moi je ne crois pas qu’il y ait de bonne ou de mauvaise situation. Moi, si je devais résumer ma vie aujourd’hui avec vous, je dirais que c’est d’abord des rencontres. Des gens qui m’ont tendu la main, peut-être à un moment où je ne pouvais pas, où j’étais seul chez moi. Et c’est assez curieux de se dire que les hasards, les rencontres forgent une destinée... Parce que quand on a le goût de la chose, quand on a le goût de la chose bien faite, le beau geste, parfois on ne trouve pas l’interlocuteur en face je dirais, le miroir qui vous aide à avancer. Alors ça n’est pas mon cas, comme je disais là, puisque moi au contraire, j’ai pu ; et je dis merci à la vie, je lui dis merci, je chante la vie, je danse la vie... je ne suis qu’amour ! Et finalement, quand des gens me disent « Mais comment fais-tu pour avoir cette humanité ? », je leur réponds très simplement que c’est ce goût de l’amour, ce goût donc qui m’a poussé aujourd’hui à entreprendre une construction mécanique... mais demain qui sait ? Peut-être simplement à me mettre au service de la communauté, à faire le don, le don de soi.</p>
-    </div>
-  </div>
-</div>
-<div class="bottom_padding">
-
-</div>
+<div style="width: 100%; height: 0.08vh; background-color: #f7a365;"></div>

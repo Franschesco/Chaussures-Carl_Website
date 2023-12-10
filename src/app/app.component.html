@@ -1,6 +1,8 @@
+<app-pop-up-annonce *ngIf="display_pop_up"></app-pop-up-annonce>
 <app-nav-bar *ngIf="nav_bar_display"></app-nav-bar>
-<app-background></app-background>
 <app-tool-bar></app-tool-bar>
+<app-contact-pop-up *ngIf="contact_display"></app-contact-pop-up>
+<app-snack-bar *ngIf="snack_bar_mail_display || snack_bar_phone_display"></app-snack-bar>
 <div class="body">
   <router-outlet></router-outlet>
 </div>

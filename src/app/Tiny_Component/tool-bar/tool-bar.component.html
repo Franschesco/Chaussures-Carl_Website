@@ -1,34 +1,38 @@
 <div class="toolbar">
   <div class="left_toolbar">
-    <mat-icon [ngClass]="menu_icon_class()" (click)="nav_bar_buton()">menu</mat-icon>
+    <mat-icon class="menu_icon" (click)="nav_bar_buton()">menu</mat-icon>
     <div class="width_space"></div>
-    <p class="menu_text_tool_bar" (click)="nav_bar_buton()" *ngIf="screenWidth_is_ok()">Menu</p>
+    <span class="menu_text_tool_bar" (click)="nav_bar_buton()" *ngIf="screenWidth_is_ok()">Menu</span>
   </div>
   <div class="middle_toolbar">
     <img src="assets/img/logo1.jpg" alt="Salut" class="logo1" (click)="accueil_event()">
   </div>
   <div class="right_toolbar">
-    <mat-icon [ngClass]="contact_icon_class()" mat-button [matMenuTriggerFor]="menu" class="contact_icon" >phone</mat-icon>
-    <div class="width_space" mat-button [matMenuTriggerFor]="menu"></div>
-    <p class="contact_text_tool_bar" mat-button [matMenuTriggerFor]="menu" *ngIf="screenWidth_is_ok()">Contact</p>
-    <mat-menu #menu="matMenu">
+    <mat-icon [ngClass]="contact_icon_class()" class="contact_icon" (click)="open_contact()">phone</mat-icon>
+    <div class="width_space" (click)="open_contact()"></div>
+    <span class="contact_text_tool_bar" (click)="open_contact()" *ngIf="screenWidth_is_ok()">Contact</span>
+    <mat-menu #menu="matMenu" class="mat_menu">
       <button mat-menu-item (click)="copy_phone_to_ClipBoard()">
-        <mat-icon>phone</mat-icon>
-        <span>03 88 92 15 48</span>
+        <mat-icon class="icon_contact">phone</mat-icon>
+        <p class="texte_icon_contact">03 88 92 15 48</p>
       </button>
       <button mat-menu-item (click)="copy_mail_to_ClipBoard()">
-        <mat-icon>mail</mat-icon>
-        <span>chaussures.carl@outlook.fr</span>
+        <mat-icon class="icon_contact">mail</mat-icon>
+        <p class="texte_icon_contact">chaussures.carl@outlook.fr</p>
       </button>
       <button mat-menu-item (click)="naviguate_to_facebook()">
-        <mat-icon>facebook</mat-icon>
-        <span>Facebook</span>
+        <mat-icon class="icon_contact">facebook</mat-icon>
+        <p class="texte_icon_contact">Facebook</p>
       </button>
       <button mat-menu-item (click)="naviguate_to_instagram()">
-        <mat-icon class="local_icon_bottom_bar" style="cursor: pointer">
+        <mat-icon class="icon_contact" style="cursor: pointer" >
           <i class="fa fa-instagram"></i>
         </mat-icon>
-        <span>Instagram</span>
+        <p class="texte_icon_contact">Instagram</p>
+      </button>
+      <button mat-menu-item (click)="openGoogleMaps()">
+        <mat-icon  class="icon_contact">place</mat-icon>
+        <p class="texte_icon_contact">Nous trouver</p>
       </button>
     </mat-menu>
   </div>

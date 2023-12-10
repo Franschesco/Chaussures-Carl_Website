@@ -1,37 +1,32 @@
 <div class="big_div_nav_bar">
-  <div class="nav_bar">
+  <div [ngClass]="get_nav_bar_class()">
     <div class="up_nav_bar">
       <mat-icon class="menu_icon_nav_bar" (click)="close_nav_bar()">close</mat-icon>
-      <p class="menu_text_nav_bar" (click)="close_nav_bar()">MENU</p>
+      <span class="menu_text_nav_bar" (click)="close_nav_bar()">MENU</span>
     </div>
     <div class="middle_nav_bar">
       <div class="nav_button">
         <p class="text_button_nav_bar" (click)="naviguate_to_accueil()">Accueil</p>
-        <mat-icon class="arrow_button_nav_bar" (click)="naviguate_to_accueil()">keyboard_arrow_right</mat-icon>
       </div>
       <div class="nav_button">
         <p class="text_button_nav_bar" (click)="naviguate_to_nos_marques()">Nos Marques</p>
-        <mat-icon class="arrow_button_nav_bar" (click)="naviguate_to_nos_marques()">keyboard_arrow_right</mat-icon>
       </div>
       <div class="nav_button">
-        <p class="text_button_nav_bar" (click)="naviguate_to_boutique()">La Boutique</p>
-        <mat-icon class="arrow_button_nav_bar" (click)="naviguate_to_boutique()">keyboard_arrow_right</mat-icon>
+        <p class="text_button_nav_bar" (click)="naviguate_to_boutique()">Nos Conseils</p>
       </div>
       <div class="nav_button">
         <p class="text_button_nav_bar" (click)="naviguate_to_a_propos()">À Propos</p>
-        <mat-icon class="arrow_button_nav_bar" (click)="naviguate_to_a_propos()">keyboard_arrow_right</mat-icon>
       </div>
     </div>
     <div class="bottom_nav_bar">
       <div class="bottom_div1">
         <mat-icon class="local_icon_nav_bar" (click)="openGoogleMaps()">place</mat-icon>
-        <p class="local_text_nav_bar" (click)="openGoogleMaps()">Nous trouvez !</p>
+        <span class="local_text_nav_bar" (click)="openGoogleMaps()">Nous trouver !</span>
       </div>
       <div class="bottom_div2">
         <mat-icon class="local_icon_nav_bar" (click)="naviguate_to_mention_legale()">edit</mat-icon>
-        <p class="local_text_nav_bar" (click)="naviguate_to_mention_legale()">Mentions légal</p>
+        <span class="local_text_nav_bar" (click)="naviguate_to_mention_legale()">Mentions légal</span>
       </div>
     </div>
   </div>
-  <div class="other" (click)="close_nav_bar()"></div>
 </div>

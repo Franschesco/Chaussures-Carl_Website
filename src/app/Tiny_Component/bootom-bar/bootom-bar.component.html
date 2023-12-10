@@ -1,33 +1,26 @@
 <div class="bottom_bar">
-  <div [ngClass]="get_main_info_div()">
+  <div class="main_info_div">
     <div class="box_bottom_bar">
       <mat-icon class="local_icon_bottom_bar" (click)="naviguate_to_facebook()" style="cursor: pointer">facebook</mat-icon>
-      <div class="width_space" (click)="naviguate_to_facebook()" style="cursor: pointer"></div>
-      <p class="text_bottom_bar" (click)="naviguate_to_facebook()" style="cursor: pointer">Facebook</p>
+      <span class="text_bottom_bar" (click)="naviguate_to_facebook()" style="cursor: pointer">Facebook</span>
     </div>
     <div class="box_bottom_bar">
       <mat-icon class="local_icon_bottom_bar" (click)="naviguate_to_instagram()" style="cursor: pointer">
         <i class="fa fa-instagram"></i>
       </mat-icon>
-      <div class="width_space" (click)="naviguate_to_facebook()" style="cursor: pointer"></div>
-      <p class="text_bottom_bar" (click)="naviguate_to_facebook()" style="cursor: pointer">Instagram</p>
+      <span class="text_bottom_bar" (click)="naviguate_to_facebook()" style="cursor: pointer">Instagram</span>
     </div>
-    <div class="width_space"></div>
     <div class="box_bottom_bar">
       <mat-icon class="local_icon_bottom_bar" style="cursor: pointer" (click)="copy_phone_to_ClipBoard()">phone</mat-icon>
-      <div class="width_space" style="cursor: pointer" (click)="copy_phone_to_ClipBoard()"></div>
-      <p class="text_bottom_bar" style="cursor: pointer" (click)="copy_phone_to_ClipBoard()">03 88 92 15 48</p>
+      <span class="text_bottom_bar" style="cursor: pointer" (click)="copy_phone_to_ClipBoard()">03 88 92 15 48</span>
     </div>
-    <div class="width_space"></div>
     <div class="box_bottom_bar">
       <mat-icon class="local_icon_bottom_bar" style="cursor: pointer" (click)="copy_mail_to_ClipBoard()">mail</mat-icon>
-      <div class="width_space" style="cursor: pointer" (click)="copy_mail_to_ClipBoard()"></div>
-      <p class="text_bottom_bar" style="cursor: pointer" (click)="copy_mail_to_ClipBoard()">chaussures.carl@outlook.fr</p>
+      <span class="text_bottom_bar" style="cursor: pointer" (click)="copy_mail_to_ClipBoard()">chaussures.carl@outlook.fr</span>
     </div>
     <div class="box_bottom_bar">
       <mat-icon class="local_icon_bottom_bar" (click)="naviguate_to_mention_legale()" style="cursor: pointer">edit</mat-icon>
-      <div class="width_space" (click)="naviguate_to_mention_legale()" style="cursor: pointer"></div>
-      <p class="text_bottom_bar" (click)="naviguate_to_mention_legale()" style="cursor: pointer">Mentions légales</p>
+      <span class="text_bottom_bar" (click)="naviguate_to_mention_legale()" style="cursor: pointer">Mentions légales</span>
     </div>
   </div>
   <div class="bar_central"></div>
@@ -44,5 +37,5 @@
   <div class="logo_bottom_div">
     <img src="assets/img/logo1.jpg" alt="logo" class="logo_bottom" (click)="naviguate_to_accueil()">
   </div>
-  <div class="space_heigth"></div>
+  <div class="heigth_space"></div>
 </div>

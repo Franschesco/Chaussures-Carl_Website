@@ -1,0 +1,120 @@
+.detail_text_above_little {
+  text-shadow: /* Ombre en bas-gauche (blanc) */
+    0.2vh 0.2vh 0 #000000;
+  text-align: center;
+  line-height: 4vh;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 4vh;
+}
+
+.annonce {
+  width: 100%;
+  padding-top: 10%;
+  background-color: #6a6255;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.annonce_img {
+  width: 80%;
+}
+
+.div_nous_trouver {
+  background-color: #6a6255;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titre_nous_trouver {
+  width: 100%;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  font-size: 8vh;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  line-height: 8vh;
+  color: #f7a365;
+}
+
+.google {
+  width: 100%;
+  height: 600px;
+}
+
+.text_arrow {
+  cursor: pointer;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  text-shadow: /* Ombre en bas-gauche (blanc) */
+    1px 1px 0 #000000;
+  margin-top: 60vh;
+}
+
+.arrow_img {
+  cursor: pointer;
+  width: 60px;
+  bottom: 0;
+}
+
+.text_arrow_little {
+  cursor: pointer;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 5vh;
+  text-shadow: /* Ombre en bas-gauche (blanc) */
+    0.2vh 0.2vh 0 #000000;
+  margin-top: 4vh;
+  animation: moveArrow 0.5s infinite alternate;
+}
+
+.arrow_img_little {
+  margin-top: 3vh;
+  cursor: pointer;
+  width: 5vh;
+  bottom: 0;
+  animation: moveArrow 0.5s infinite alternate;
+}
+
+@keyframes moveArrow {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+.little {
+  height: 88vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.up_little {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  align-items: center; /* Centrez verticalement le contenu de .div_logo1 */
+  flex-direction: column;
+  height: 20%;
+}
+
+.middle_little {
+  height: 40%;
+}
+
+.bottom_little {
+  height: 30%;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  align-items: center; /* Centrez verticalement le contenu de .div_logo1 */
+  flex-direction: column;
+}

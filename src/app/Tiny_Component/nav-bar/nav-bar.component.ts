@@ -18,6 +18,22 @@ export class NavBarComponent implements OnInit {
     this.lockScroll();
   }
 
+  get_nav_bar_class() {
+    if (window.outerWidth < 1100) {
+      return ('nav_bar_little');
+    } else {
+      return ('nav_bar');
+    }
+  }
+
+  is_little() {
+    if (window.outerWidth < 1000) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
   lockScroll() {
     // Obtenir la position actuelle de défilement
     const scrollY = window.scrollY;
@@ -41,7 +57,9 @@ export class NavBarComponent implements OnInit {
       return ('nav_bar_end');
     }
   }
+
   close_nav_bar () {
+    console.log(window.outerWidth)
     this.unlockScroll();
     this.appComponent.nav_bar_display = !this.appComponent.nav_bar_display;
   }

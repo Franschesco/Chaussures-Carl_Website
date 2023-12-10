@@ -1,6 +1,24 @@
-.boutique {
-  width: 90%;
-  height: 500px;
+.conseil_div {
+  width: 100%;
+  background-color: #6a6255;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titre_conseil {
+  color: #f7a365;
+  padding: 3vh;
+  font-size: 6vh;
+  font-family: 'Playfair Display', serif;
   text-align: center;
-  padding: 4%;
+}
+
+.texte_conseil {
+  width: 70%;
+  color: white;
+  font-size: 3vh;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  padding: 1vh;
 }

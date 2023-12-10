@@ -1,0 +1,93 @@
+
+.menu_icon_nav_bar {
+  display: flex;
+  justify-content: center; /* Centrez horizontalement le contenu de .div_logo1 */
+  align-items: center; /* Centrez verticalement le contenu de .div_logo1 */
+  flex-direction: row;
+  cursor: pointer;
+  margin-right: 3%;
+  color: white;
+  height: 4vh;
+  width: 4vh;
+  font-size: 4vh;
+}
+
+.menu_text_nav_bar {
+  cursor: pointer;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 4vh;
+}
+
+.local_icon_nav_bar {
+  cursor: pointer;
+  color: white;
+  height: 2vh;
+  width: 2vh;
+  font-size: 2vh;
+  margin-right: 1vh;
+}
+
+.local_text_nav_bar {
+  cursor: pointer;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 2vh;
+}
+
+.nav_button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.text_button_nav_bar {
+  cursor: pointer;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 3vh;
+  line-height: 3vh;
+}
+
+.arrow_button_nav_bar {
+  cursor: pointer;
+  float: right;
+  color: white;
+}
+
+/* CSS */
+.button-74 {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-74:hover {
+  background-color: #fff;
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 180px;
+    padding: 0 25px;
+  }
+}
